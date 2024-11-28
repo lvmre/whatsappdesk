@@ -1,0 +1,29 @@
+{
+  "name": "chatc/whatsappdesk",
+  "description": "Laravel package for WhatsApp messaging via ChatC API",
+  "keywords": [
+    "laravel",
+    "whatsapp",
+    "chatc"
+  ],
+  "type": "library",
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChatC\\WhatsAppDesk\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ChatC\\WhatsAppDesk\\WhatsAppServiceProvider"
+      ],
+      "aliases": {
+        "WhatsAppService": "ChatC\\WhatsAppDesk\\WhatsAppService"
+      }
+    }
+  }
+}
